@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel_Sched</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> <!-- Add this line -->
+    <title>Travel_Sched</title>
 </head>
 <body>
 <h2>Travel Schedule</h2>
@@ -32,21 +34,7 @@
     <tbody id="schedule-body">
     </tbody>
 </table>
-<script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
-          // Registration was successful
-          console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function(err) {
-          // Registration failed
-          console.log('ServiceWorker registration failed: ', err);
-        });
-      });
-    }
-  </script>
-  
-
-<script src="scripts.js"></script>
+<script src="index.js" type="module"></script> <!-- Add type="module" -->
+<script src="scripts.js" type="module"></script> <!-- Add type="module" -->
 </body>
 </html>

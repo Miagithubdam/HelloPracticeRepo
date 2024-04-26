@@ -1,0 +1,10 @@
+{
+    "name": "Travel Schedule",
+    "short_name": "TravelSched",
+    "description": "An app for managing travel schedules",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#424769",
+    "theme_color": "#ffd153"
+  }
+  
